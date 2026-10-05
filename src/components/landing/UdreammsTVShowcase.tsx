@@ -2,9 +2,9 @@
 
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import YouTubeBackground from "@/components/landing/YouTubeBackground";
 
 const TV_VIDEO_ID = "tltAsIv6TU4";
-const TV_VIDEO_URL = `https://www.youtube-nocookie.com/embed/${TV_VIDEO_ID}?autoplay=1&mute=1&controls=0&loop=1&playlist=${TV_VIDEO_ID}&rel=0&cc_load_policy=0&modestbranding=1&playsinline=1&iv_load_policy=3&fs=0&disablekb=1&vq=hd1080`;
 
 export default function UdreammsTVShowcase() {
     const controls = useAnimation();
@@ -110,20 +110,11 @@ export default function UdreammsTVShowcase() {
             >
                 {/* Video de fondo */}
                 {isNearView && (
-                    // Recuadro 16:9 a la derecha; el iframe es 240px más alto (120px arriba y
-                    // abajo) para dejar fuera de la vista el título y los controles de YouTube.
+                    // Recuadro 16:9: abajo a lo ancho en celular/tablet, a la derecha en computadora.
                     <div
-                        aria-hidden
                         className="absolute left-6 right-6 md:left-12 md:right-12 bottom-24 md:bottom-32 aspect-video lg:left-auto lg:bottom-auto lg:top-1/2 lg:-translate-y-1/2 lg:right-12 lg:w-[55%] overflow-hidden rounded-2xl z-0"
                     >
-                        <iframe
-                            src={TV_VIDEO_URL}
-                            title="MIJINES Streaming"
-                            tabIndex={-1}
-                            allow="autoplay; encrypted-media; picture-in-picture"
-                            className="absolute left-0 w-full border-0 pointer-events-none"
-                            style={{ top: "-120px", height: "calc(100% + 240px)" }}
-                        />
+                        <YouTubeBackground videoId={TV_VIDEO_ID} title="MIJINES Streaming" />
                     </div>
                 )}
 
