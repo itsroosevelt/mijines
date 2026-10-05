@@ -4,9 +4,9 @@
 export default function MentorshipShowcase() {
     return (
         <section id="america" className="py-12 md:py-16 lg:py-20 bg-white text-black overflow-hidden font-sans">
-            <div className="container mx-auto px-6 max-w-3xl">
-                <div className="flex flex-col items-center text-center gap-8 lg:gap-10">
-                    <div className="flex flex-col items-center">
+            <div className="container mx-auto px-6 max-w-3xl lg:max-w-[1200px]">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 text-center lg:text-left">
+                    <div className="lg:col-span-5 flex flex-col items-center lg:items-start">
                         <p className="text-xs font-medium uppercase tracking-[0.25em] text-gray-400 mb-4">03 · Toda la comunidad ecuatoriana somos Uno</p>
                         <h2 className="font-normal tracking-tight text-black leading-[1.1]">
                             <span className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl block mb-2 font-medium">Bienvenidos a</span>
@@ -14,7 +14,7 @@ export default function MentorshipShowcase() {
                         </h2>
                     </div>
 
-                    <div className="w-full">
+                    <div className="lg:col-span-7">
                         <p className="text-gray-600 text-base leading-[1.7] font-light">
                             Te invitamos a olvidar las barreras y divisiones que nos han impuesto los políticos, a poner la
                             mano en el corazón y a pensar en el futuro de nuestra gente. Ayudaremos a quien sea, sin importar
