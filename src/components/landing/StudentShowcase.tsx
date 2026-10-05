@@ -4,9 +4,9 @@
 export default function StudentShowcase() {
   return (
     <section id="vision" className="py-12 md:py-16 lg:py-20 bg-white text-black overflow-hidden font-sans">
-      <div className="container mx-auto px-6 max-w-[1200px]">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-          <div className="lg:col-span-5">
+      <div className="container mx-auto px-6 max-w-3xl">
+        <div className="flex flex-col items-center text-center gap-8 lg:gap-10">
+          <div className="flex flex-col items-center">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.25em] text-gray-400 mb-4">01 · Visión y Origen</p>
               <h2 className="font-normal tracking-tight text-black leading-[1.1]">
@@ -17,12 +17,12 @@ export default function StudentShowcase() {
                 src="/icons/mijines-logo-original.webp"
                 alt="MIJINES | ECUATORIANOS EN ACCIÓN"
                 loading="lazy"
-                className="mt-8 w-56 sm:w-64 lg:w-full lg:max-w-sm h-auto rounded-full"
+                className="mt-8 mx-auto block w-56 sm:w-64 lg:w-80 h-auto rounded-full"
               />
             </div>
           </div>
 
-          <div className="lg:col-span-7">
+          <div className="w-full">
             <p className="text-gray-600 text-base leading-[1.7] font-light">
               El Ecuador ha sido históricamente una tierra de gente trabajadora, talento innato y gran riqueza natural;
               sin embargo, las decisiones de políticos irresponsables dividieron a nuestra sociedad y llevaron al país al
